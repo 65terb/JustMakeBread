@@ -1,0 +1,877 @@
+{
+  "schemaVersion": "1.0",
+  "id": "i9-scoreboard-keycaps",
+  "revision": 4,
+  "status": "draft",
+  "creativeBrief": {
+    "objective": "Provide reusable PNG keycaps for data-driven panel compositing and world prompts while the physical shell is swappable through a semantic screen-surface adapter.",
+    "audience": "First-stage Just Make Bread players on B+ scaled views.",
+    "approval": "Technical package correction in progress; final visual adoption remains HUMAN VISUAL PENDING."
+  },
+  "classification": {
+    "packageScope": "component-family",
+    "renderStrategy": "hybrid",
+    "usageContexts": [
+      "world-scoreboard",
+      "tutorial",
+      "lifecycle-results",
+      "world-prompts"
+    ]
+  },
+  "visualIdentity": {
+    "palette": [
+      "frame #34454C",
+      "panel #263746",
+      "glyph #F2F1EA",
+      "key outer border #000000",
+      "available fill #B9F3F5"
+    ],
+    "geometryRules": [
+      "true physical 3D nine-slice with fixed corners and axis-only edges",
+      "default central 4.15x1.55x0.26",
+      "standard keycap 1:1 and wide keycap 2:1 with equal apparent outline thickness"
+    ],
+    "hierarchyRules": [
+      "exactly nine shell segments plus one independent semantic screen",
+      "all board content is rendered into the semantic screen material map",
+      "each board instance owns an independent screen material and texture"
+    ],
+    "continuityAnchors": [
+      "Galmuri labels",
+      "muted steel frame",
+      "slate panel face",
+      "warm off-white glyphs"
+    ],
+    "forbiddenChanges": [
+      "floating board text",
+      "standalone tutorial keycap scene children",
+      "role-specific frame or panel construction",
+      "runtime CSS/SVG/canvas keycap construction",
+      "runtime use of the full tutorial-panel-v002 reference image",
+      "brittle GLB node-name coupling"
+    ]
+  },
+  "style": {
+    "profile": "default-style",
+    "embeddedSummary": {
+      "family": "Primary physical scoreboard",
+      "tone": "casual readable factory signage",
+      "contentOwnership": "semantic panelSurface material map"
+    },
+    "referenceAssets": [
+      "canonical/i9-scoreboard-keycaps-system-v003-black-outline.png",
+      "qa/keycap-border-comparison-v002-v003.png"
+    ]
+  },
+  "targets": [
+    {
+      "id": "standard-keycap",
+      "kind": "component",
+      "role": "input-keycap",
+      "description": "Blank, legacy W/A/S/D/E, and current Q/arrow transparent PNG keys.",
+      "requiredForProduction": true
+    },
+    {
+      "id": "wide-keycap",
+      "kind": "component",
+      "role": "wide-input-keycap",
+      "description": "Blank, SPACE, and unbound SHIFT transparent PNG keys.",
+      "requiredForProduction": true
+    },
+    {
+      "id": "dynamic-panel-compositor",
+      "kind": "component",
+      "role": "semantic-screen-renderer",
+      "description": "Shared CanvasTexture foundation for central, tutorial and result panels; keycaps are PNG drawImage inputs.",
+      "requiredForProduction": true
+    },
+    {
+      "id": "scoreboard-surface-adapter",
+      "kind": "component",
+      "role": "asset-surface-boundary",
+      "description": "True width+height 3D nine-slice fallback/future asset shell with independent semantic screen materials.",
+      "requiredForProduction": true
+    },
+    {
+      "id": "tutorial-panel",
+      "kind": "component",
+      "role": "qa-only-reference",
+      "description": "Superseded full-panel v002 raster; forbidden as a runtime map.",
+      "requiredForProduction": false
+    },
+    {
+      "id": "world-material-prompt",
+      "kind": "component",
+      "role": "world-prompt-e-q",
+      "description": "Canonical material pickup E and floor-drop Q atlas planes.",
+      "requiredForProduction": true
+    },
+    {
+      "id": "world-production-prompt",
+      "kind": "component",
+      "role": "world-prompt-space",
+      "description": "Production-block SPACE atlas plane.",
+      "requiredForProduction": true
+    },
+    {
+      "id": "world-reset-prompt",
+      "kind": "component",
+      "role": "world-prompt-reset-e",
+      "description": "Failed-awaiting-reset E atlas plane.",
+      "requiredForProduction": true
+    }
+  ],
+  "states": [
+    {
+      "id": "default",
+      "description": "Normal key state.",
+      "requiredForProduction": true
+    },
+    {
+      "id": "lit",
+      "description": "Available or highlighted key state.",
+      "requiredForProduction": true
+    },
+    {
+      "id": "disabled",
+      "description": "Unavailable key state.",
+      "requiredForProduction": true
+    },
+    {
+      "id": "tutorial-dynamic",
+      "description": "Tutorial composed from atlas image regions plus dynamic Galmuri labels.",
+      "requiredForProduction": true
+    },
+    {
+      "id": "central-dynamic",
+      "description": "Authoritative timer, score and result content.",
+      "requiredForProduction": true
+    },
+    {
+      "id": "breakdown-dynamic",
+      "description": "Authoritative ordered score breakdown rows.",
+      "requiredForProduction": true
+    },
+    {
+      "id": "tutorial-static",
+      "description": "Rejected full-panel static tutorial reference; runtime forbidden.",
+      "requiredForProduction": false
+    }
+  ],
+  "breakpoints": [
+    {
+      "id": "bplus-800",
+      "description": "800x600 4:3 landscape fixture.",
+      "orientation": "landscape",
+      "minWidth": 800,
+      "maxWidth": 800,
+      "minHeight": 600,
+      "maxHeight": 600,
+      "requiredForProduction": true
+    },
+    {
+      "id": "hd-1280",
+      "description": "1280x720 16:9 landscape fixture.",
+      "orientation": "landscape",
+      "minWidth": 1280,
+      "maxWidth": 1280,
+      "minHeight": 720,
+      "maxHeight": 720,
+      "requiredForProduction": true
+    },
+    {
+      "id": "full-hd-1920",
+      "description": "1920x1080 16:9 landscape fixture.",
+      "orientation": "landscape",
+      "minWidth": 1920,
+      "maxWidth": 1920,
+      "minHeight": 1080,
+      "maxHeight": 1080,
+      "requiredForProduction": true
+    }
+  ],
+  "tokens": [
+    {
+      "id": "scoreboard-frame",
+      "category": "color",
+      "value": "#34454C"
+    },
+    {
+      "id": "scoreboard-panel",
+      "category": "color",
+      "value": "#263746"
+    },
+    {
+      "id": "scoreboard-glyph",
+      "category": "color",
+      "value": "#F2F1EA"
+    },
+    {
+      "id": "keycap-outer-border",
+      "category": "color",
+      "value": "#000000"
+    },
+    {
+      "id": "keycap-border-thickness",
+      "category": "layout",
+      "value": {
+        "source4x": 20,
+        "atlas1x": 5,
+        "atlas2x": 10
+      }
+    },
+    {
+      "id": "panel-aspect-fallback",
+      "category": "layout",
+      "value": 3.04
+    },
+    {
+      "id": "panel-safe-padding",
+      "category": "spacing",
+      "value": {
+        "horizontalRatio": 0.06,
+        "verticalRatio": 0.1
+      }
+    },
+    {
+      "id": "textured-material-multiplier",
+      "category": "color",
+      "value": "#FFFFFF"
+    },
+    {
+      "id": "panel-tone-mapping",
+      "category": "other",
+      "value": false
+    },
+    {
+      "id": "board-rise",
+      "category": "motion",
+      "value": {
+        "authority": "presentation-only",
+        "reducedMotion": "exact endpoint",
+        "cancel": "hidden endpoint"
+      }
+    }
+  ],
+  "dependencies": [],
+  "productionProfiles": [
+    {
+      "id": "runtime-raster",
+      "medium": "world-space-panel-texture",
+      "deliveryMode": "raster-assets",
+      "platform": "web-threejs",
+      "usage": [
+        "srgb-dynamic-panel-map",
+        "png-keycap-atlas"
+      ],
+      "density": 2,
+      "fileFormat": "png",
+      "colorMode": "srgb"
+    }
+  ],
+  "assets": [
+    {
+      "id": "canonical-i9-scoreboard-keycaps-system-v002-png",
+      "role": "canonical",
+      "path": "canonical/i9-scoreboard-keycaps-system-v002.png",
+      "version": 4,
+      "status": "draft"
+    },
+    {
+      "id": "canonical-i9-scoreboard-keycaps-system-v003-black-outline-png",
+      "role": "canonical",
+      "path": "canonical/i9-scoreboard-keycaps-system-v003-black-outline.png",
+      "version": 4,
+      "status": "draft"
+    },
+    {
+      "id": "deliverables-keycaps-keycaps-atlas-1x-json",
+      "role": "deliverable",
+      "path": "deliverables/keycaps/keycaps-atlas-1x.json",
+      "version": 4,
+      "status": "draft",
+      "productionProfile": "runtime-raster",
+      "metadata": {
+        "targetIds": [
+          "standard-keycap",
+          "wide-keycap",
+          "world-material-prompt",
+          "world-production-prompt",
+          "world-reset-prompt"
+        ],
+        "stateIds": [
+          "default",
+          "lit",
+          "disabled"
+        ],
+        "breakpointIds": [
+          "bplus-800",
+          "hd-1280",
+          "full-hd-1920"
+        ]
+      }
+    },
+    {
+      "id": "deliverables-keycaps-keycaps-atlas-1x-png",
+      "role": "deliverable",
+      "path": "deliverables/keycaps/keycaps-atlas-1x.png",
+      "version": 4,
+      "status": "draft",
+      "productionProfile": "runtime-raster",
+      "metadata": {
+        "targetIds": [
+          "standard-keycap",
+          "wide-keycap",
+          "world-material-prompt",
+          "world-production-prompt",
+          "world-reset-prompt"
+        ],
+        "stateIds": [
+          "default",
+          "lit",
+          "disabled"
+        ],
+        "breakpointIds": [
+          "bplus-800",
+          "hd-1280",
+          "full-hd-1920"
+        ]
+      }
+    },
+    {
+      "id": "deliverables-keycaps-keycaps-atlas-2x-json",
+      "role": "deliverable",
+      "path": "deliverables/keycaps/keycaps-atlas-2x.json",
+      "version": 4,
+      "status": "draft",
+      "productionProfile": "runtime-raster",
+      "metadata": {
+        "targetIds": [
+          "standard-keycap",
+          "wide-keycap",
+          "world-material-prompt",
+          "world-production-prompt",
+          "world-reset-prompt"
+        ],
+        "stateIds": [
+          "default",
+          "lit",
+          "disabled"
+        ],
+        "breakpointIds": [
+          "bplus-800",
+          "hd-1280",
+          "full-hd-1920"
+        ]
+      }
+    },
+    {
+      "id": "deliverables-keycaps-keycaps-atlas-2x-png",
+      "role": "deliverable",
+      "path": "deliverables/keycaps/keycaps-atlas-2x.png",
+      "version": 4,
+      "status": "draft",
+      "productionProfile": "runtime-raster",
+      "metadata": {
+        "targetIds": [
+          "standard-keycap",
+          "wide-keycap",
+          "world-material-prompt",
+          "world-production-prompt",
+          "world-reset-prompt"
+        ],
+        "stateIds": [
+          "default",
+          "lit",
+          "disabled"
+        ],
+        "breakpointIds": [
+          "bplus-800",
+          "hd-1280",
+          "full-hd-1920"
+        ]
+      }
+    },
+    {
+      "id": "deliverables-tutorial-panel-tutorial-panel-v002-1x-png",
+      "role": "reference",
+      "path": "deliverables/tutorial-panel/tutorial-panel-v002-1x.png",
+      "version": 4,
+      "status": "superseded",
+      "metadata": {
+        "targetIds": [
+          "tutorial-panel"
+        ]
+      }
+    },
+    {
+      "id": "deliverables-tutorial-panel-tutorial-panel-v002-2x-png",
+      "role": "reference",
+      "path": "deliverables/tutorial-panel/tutorial-panel-v002-2x.png",
+      "version": 4,
+      "status": "superseded",
+      "metadata": {
+        "targetIds": [
+          "tutorial-panel"
+        ]
+      }
+    },
+    {
+      "id": "deliverables-tutorial-panel-tutorial-panel-v002-json",
+      "role": "reference",
+      "path": "deliverables/tutorial-panel/tutorial-panel-v002.json",
+      "version": 4,
+      "status": "superseded",
+      "metadata": {
+        "targetIds": [
+          "tutorial-panel"
+        ]
+      }
+    },
+    {
+      "id": "license-assets-txt",
+      "role": "source",
+      "path": "LICENSE-ASSETS.txt",
+      "version": 4,
+      "status": "draft"
+    },
+    {
+      "id": "provenance-md",
+      "role": "source",
+      "path": "PROVENANCE.md",
+      "version": 4,
+      "status": "draft"
+    },
+    {
+      "id": "qa-asset-metadata-json",
+      "role": "qa-evidence",
+      "path": "qa/asset-metadata.json",
+      "version": 4,
+      "status": "draft"
+    },
+    {
+      "id": "qa-keycap-border-comparison-v002-v003-png",
+      "role": "qa-evidence",
+      "path": "qa/keycap-border-comparison-v002-v003.png",
+      "version": 4,
+      "status": "draft"
+    },
+    {
+      "id": "qa-keycap-border-v003-json",
+      "role": "qa-evidence",
+      "path": "qa/keycap-border-v003.json",
+      "version": 4,
+      "status": "draft"
+    },
+    {
+      "id": "sha256sums-txt",
+      "role": "source",
+      "path": "SHA256SUMS.txt",
+      "version": 4,
+      "status": "draft"
+    },
+    {
+      "id": "sources-build-asset-metadata-py",
+      "role": "source",
+      "path": "sources/build_asset_metadata.py",
+      "version": 4,
+      "status": "draft"
+    },
+    {
+      "id": "sources-font-galmuri11-bold-woff2",
+      "role": "source",
+      "path": "sources/font/Galmuri11-Bold.woff2",
+      "version": 4,
+      "status": "draft"
+    },
+    {
+      "id": "sources-font-ofl-1-1-txt",
+      "role": "source",
+      "path": "sources/font/OFL-1.1.txt",
+      "version": 4,
+      "status": "draft"
+    },
+    {
+      "id": "sources-keycaps-standard-a-disabled-4x-png",
+      "role": "source",
+      "path": "sources/keycaps/standard-a-disabled-4x.png",
+      "version": 4,
+      "status": "draft"
+    },
+    {
+      "id": "sources-keycaps-standard-a-lit-4x-png",
+      "role": "source",
+      "path": "sources/keycaps/standard-a-lit-4x.png",
+      "version": 4,
+      "status": "draft"
+    },
+    {
+      "id": "sources-keycaps-standard-a-normal-4x-png",
+      "role": "source",
+      "path": "sources/keycaps/standard-a-normal-4x.png",
+      "version": 4,
+      "status": "draft"
+    },
+    {
+      "id": "sources-keycaps-standard-arrow-down-disabled-4x-png",
+      "role": "source",
+      "path": "sources/keycaps/standard-arrow-down-disabled-4x.png",
+      "version": 4,
+      "status": "draft"
+    },
+    {
+      "id": "sources-keycaps-standard-arrow-down-lit-4x-png",
+      "role": "source",
+      "path": "sources/keycaps/standard-arrow-down-lit-4x.png",
+      "version": 4,
+      "status": "draft"
+    },
+    {
+      "id": "sources-keycaps-standard-arrow-down-normal-4x-png",
+      "role": "source",
+      "path": "sources/keycaps/standard-arrow-down-normal-4x.png",
+      "version": 4,
+      "status": "draft"
+    },
+    {
+      "id": "sources-keycaps-standard-arrow-left-disabled-4x-png",
+      "role": "source",
+      "path": "sources/keycaps/standard-arrow-left-disabled-4x.png",
+      "version": 4,
+      "status": "draft"
+    },
+    {
+      "id": "sources-keycaps-standard-arrow-left-lit-4x-png",
+      "role": "source",
+      "path": "sources/keycaps/standard-arrow-left-lit-4x.png",
+      "version": 4,
+      "status": "draft"
+    },
+    {
+      "id": "sources-keycaps-standard-arrow-left-normal-4x-png",
+      "role": "source",
+      "path": "sources/keycaps/standard-arrow-left-normal-4x.png",
+      "version": 4,
+      "status": "draft"
+    },
+    {
+      "id": "sources-keycaps-standard-arrow-right-disabled-4x-png",
+      "role": "source",
+      "path": "sources/keycaps/standard-arrow-right-disabled-4x.png",
+      "version": 4,
+      "status": "draft"
+    },
+    {
+      "id": "sources-keycaps-standard-arrow-right-lit-4x-png",
+      "role": "source",
+      "path": "sources/keycaps/standard-arrow-right-lit-4x.png",
+      "version": 4,
+      "status": "draft"
+    },
+    {
+      "id": "sources-keycaps-standard-arrow-right-normal-4x-png",
+      "role": "source",
+      "path": "sources/keycaps/standard-arrow-right-normal-4x.png",
+      "version": 4,
+      "status": "draft"
+    },
+    {
+      "id": "sources-keycaps-standard-arrow-up-disabled-4x-png",
+      "role": "source",
+      "path": "sources/keycaps/standard-arrow-up-disabled-4x.png",
+      "version": 4,
+      "status": "draft"
+    },
+    {
+      "id": "sources-keycaps-standard-arrow-up-lit-4x-png",
+      "role": "source",
+      "path": "sources/keycaps/standard-arrow-up-lit-4x.png",
+      "version": 4,
+      "status": "draft"
+    },
+    {
+      "id": "sources-keycaps-standard-arrow-up-normal-4x-png",
+      "role": "source",
+      "path": "sources/keycaps/standard-arrow-up-normal-4x.png",
+      "version": 4,
+      "status": "draft"
+    },
+    {
+      "id": "sources-keycaps-standard-blank-disabled-4x-png",
+      "role": "source",
+      "path": "sources/keycaps/standard-blank-disabled-4x.png",
+      "version": 4,
+      "status": "draft"
+    },
+    {
+      "id": "sources-keycaps-standard-blank-lit-4x-png",
+      "role": "source",
+      "path": "sources/keycaps/standard-blank-lit-4x.png",
+      "version": 4,
+      "status": "draft"
+    },
+    {
+      "id": "sources-keycaps-standard-blank-normal-4x-png",
+      "role": "source",
+      "path": "sources/keycaps/standard-blank-normal-4x.png",
+      "version": 4,
+      "status": "draft"
+    },
+    {
+      "id": "sources-keycaps-standard-d-disabled-4x-png",
+      "role": "source",
+      "path": "sources/keycaps/standard-d-disabled-4x.png",
+      "version": 4,
+      "status": "draft"
+    },
+    {
+      "id": "sources-keycaps-standard-d-lit-4x-png",
+      "role": "source",
+      "path": "sources/keycaps/standard-d-lit-4x.png",
+      "version": 4,
+      "status": "draft"
+    },
+    {
+      "id": "sources-keycaps-standard-d-normal-4x-png",
+      "role": "source",
+      "path": "sources/keycaps/standard-d-normal-4x.png",
+      "version": 4,
+      "status": "draft"
+    },
+    {
+      "id": "sources-keycaps-standard-e-disabled-4x-png",
+      "role": "source",
+      "path": "sources/keycaps/standard-e-disabled-4x.png",
+      "version": 4,
+      "status": "draft"
+    },
+    {
+      "id": "sources-keycaps-standard-e-lit-4x-png",
+      "role": "source",
+      "path": "sources/keycaps/standard-e-lit-4x.png",
+      "version": 4,
+      "status": "draft"
+    },
+    {
+      "id": "sources-keycaps-standard-e-normal-4x-png",
+      "role": "source",
+      "path": "sources/keycaps/standard-e-normal-4x.png",
+      "version": 4,
+      "status": "draft"
+    },
+    {
+      "id": "sources-keycaps-standard-q-disabled-4x-png",
+      "role": "source",
+      "path": "sources/keycaps/standard-q-disabled-4x.png",
+      "version": 4,
+      "status": "draft"
+    },
+    {
+      "id": "sources-keycaps-standard-q-lit-4x-png",
+      "role": "source",
+      "path": "sources/keycaps/standard-q-lit-4x.png",
+      "version": 4,
+      "status": "draft"
+    },
+    {
+      "id": "sources-keycaps-standard-q-normal-4x-png",
+      "role": "source",
+      "path": "sources/keycaps/standard-q-normal-4x.png",
+      "version": 4,
+      "status": "draft"
+    },
+    {
+      "id": "sources-keycaps-standard-s-disabled-4x-png",
+      "role": "source",
+      "path": "sources/keycaps/standard-s-disabled-4x.png",
+      "version": 4,
+      "status": "draft"
+    },
+    {
+      "id": "sources-keycaps-standard-s-lit-4x-png",
+      "role": "source",
+      "path": "sources/keycaps/standard-s-lit-4x.png",
+      "version": 4,
+      "status": "draft"
+    },
+    {
+      "id": "sources-keycaps-standard-s-normal-4x-png",
+      "role": "source",
+      "path": "sources/keycaps/standard-s-normal-4x.png",
+      "version": 4,
+      "status": "draft"
+    },
+    {
+      "id": "sources-keycaps-standard-w-disabled-4x-png",
+      "role": "source",
+      "path": "sources/keycaps/standard-w-disabled-4x.png",
+      "version": 4,
+      "status": "draft"
+    },
+    {
+      "id": "sources-keycaps-standard-w-lit-4x-png",
+      "role": "source",
+      "path": "sources/keycaps/standard-w-lit-4x.png",
+      "version": 4,
+      "status": "draft"
+    },
+    {
+      "id": "sources-keycaps-standard-w-normal-4x-png",
+      "role": "source",
+      "path": "sources/keycaps/standard-w-normal-4x.png",
+      "version": 4,
+      "status": "draft"
+    },
+    {
+      "id": "sources-keycaps-wide-blank-disabled-4x-png",
+      "role": "source",
+      "path": "sources/keycaps/wide-blank-disabled-4x.png",
+      "version": 4,
+      "status": "draft"
+    },
+    {
+      "id": "sources-keycaps-wide-blank-lit-4x-png",
+      "role": "source",
+      "path": "sources/keycaps/wide-blank-lit-4x.png",
+      "version": 4,
+      "status": "draft"
+    },
+    {
+      "id": "sources-keycaps-wide-blank-normal-4x-png",
+      "role": "source",
+      "path": "sources/keycaps/wide-blank-normal-4x.png",
+      "version": 4,
+      "status": "draft"
+    },
+    {
+      "id": "sources-keycaps-wide-shift-disabled-4x-png",
+      "role": "source",
+      "path": "sources/keycaps/wide-shift-disabled-4x.png",
+      "version": 4,
+      "status": "draft"
+    },
+    {
+      "id": "sources-keycaps-wide-shift-lit-4x-png",
+      "role": "source",
+      "path": "sources/keycaps/wide-shift-lit-4x.png",
+      "version": 4,
+      "status": "draft"
+    },
+    {
+      "id": "sources-keycaps-wide-shift-normal-4x-png",
+      "role": "source",
+      "path": "sources/keycaps/wide-shift-normal-4x.png",
+      "version": 4,
+      "status": "draft"
+    },
+    {
+      "id": "sources-keycaps-wide-space-disabled-4x-png",
+      "role": "source",
+      "path": "sources/keycaps/wide-space-disabled-4x.png",
+      "version": 4,
+      "status": "draft"
+    },
+    {
+      "id": "sources-keycaps-wide-space-lit-4x-png",
+      "role": "source",
+      "path": "sources/keycaps/wide-space-lit-4x.png",
+      "version": 4,
+      "status": "draft"
+    },
+    {
+      "id": "sources-keycaps-wide-space-normal-4x-png",
+      "role": "source",
+      "path": "sources/keycaps/wide-space-normal-4x.png",
+      "version": 4,
+      "status": "draft"
+    },
+    {
+      "id": "sources-regenerate-keycaps-v003-py",
+      "role": "source",
+      "path": "sources/regenerate_keycaps_v003.py",
+      "version": 4,
+      "status": "draft"
+    },
+    {
+      "id": "sources-tutorial-panel-composition-v002-json",
+      "role": "reference",
+      "path": "sources/tutorial-panel/composition-v002.json",
+      "version": 4,
+      "status": "superseded",
+      "metadata": {
+        "targetIds": [
+          "tutorial-panel"
+        ]
+      }
+    },
+    {
+      "id": "sources-tutorial-panel-tutorial-panel-v002-4x-png",
+      "role": "reference",
+      "path": "sources/tutorial-panel/tutorial-panel-v002-4x.png",
+      "version": 4,
+      "status": "superseded",
+      "metadata": {
+        "targetIds": [
+          "tutorial-panel"
+        ]
+      }
+    }
+  ],
+  "provenance": {
+    "inputReferences": [
+      {
+        "id": "primary-scoreboard-runtime",
+        "path": "../../../src/main.ts",
+        "usage": "read-only fallback geometry and material authority"
+      },
+      {
+        "id": "galmuri-ofl",
+        "path": "sources/font/OFL-1.1.txt",
+        "usage": "dynamic Korean and score labels"
+      }
+    ],
+    "generationRecords": [
+      {
+        "id": "deterministic-raster-v003-black-outline",
+        "method": "offline deterministic PNG correction and atlas assembly",
+        "date": "2026-08-11",
+        "source": "sources/regenerate_keycaps_v003.py",
+        "outputHashes": "SHA256SUMS.txt"
+      },
+      {
+        "id": "tutorial-composition-v002",
+        "method": "superseded full-panel composition retained as QA reference only",
+        "source": "sources/tutorial-panel/composition-v002.json"
+      }
+    ]
+  },
+  "qa": {
+    "interactionClarity": "pending",
+    "visualConsistency": "pending",
+    "responsiveValidation": "pending",
+    "technicalValidation": "pending"
+  },
+  "extensions": {
+    "humanVisualGate": "pending",
+    "rejectedPredecessors": [
+      "I9-TUTORIAL-TEMPLATE-001",
+      "I9-KEYCAP-ASSET-001",
+      "static-full-panel-runtime-handoff"
+    ],
+    "activeMajorFinding": "I9-SCOREBOARD-SHELL-ADAPTER-001",
+    "runtimeVisualStatus": "primary-integration-blocked",
+    "tutorialPanelV002Usage": "reference-only-do-not-copy-to-public",
+    "runtimeAtlasAllowlist": {
+      "1x": {
+        "path": "deliverables/keycaps/keycaps-atlas-1x.png",
+        "sha256": "3520da92a522b2c6e5be54ad9a51bec1740e1c7ea5a11a3e1a2677ab394711c2"
+      },
+      "2x": {
+        "path": "deliverables/keycaps/keycaps-atlas-2x.png",
+        "sha256": "9eaba93c5fe6a45c09490c6b554cad458252ef7440780699b56d2487d5696512"
+      }
+    },
+    "assetHashIndex": "qa/asset-metadata.json",
+    "sha256Manifest": "SHA256SUMS.txt"
+  }
+}

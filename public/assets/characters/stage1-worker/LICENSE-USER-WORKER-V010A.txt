@@ -1,0 +1,26 @@
+Just Make Bread — Stage 1 worker v010a
+
+File: stage1-worker-user-motion-v010a.glb
+SHA-256: 7FFB53974131C8481F44EB22C17E3533AB55E15FE679E5E37C9FD2CFBE315F5F
+Size: 326,688 bytes
+
+This runtime candidate contains the user-authored worker mesh/design and the
+user-approved v010a animation derivative. The non-carry actions retain the
+validated v008 motion, while Holding_A and CarryWalking_A use the approved
+underhand bread-support motion. The file exposes exactly Idle_A, Walking_A,
+Holding_A, CarryWalking_A, Running_A, BlockPush_A, BlockPull_A, and
+BlockMoveFront_A. All animations are in-place; authoritative gameplay owns
+player and production-block position, collision, input, and lifecycle state.
+
+The user-authored mesh/design and local animation derivative are used with
+permission for this project. Legacy exact-four motion provenance derives from
+Kay Lousberg's KayKit: Character Animations 1.1, released under Creative
+Commons Zero (CC0) 1.0:
+https://creativecommons.org/publicdomain/zero/1.0/
+
+No authoring paths, private metadata, provider credentials, source archives,
+or source textures are part of the public runtime payload. Running_A remains
+validation-only. stage1-worker-user-motion-v010a.glb is the only runtime player
+GLB. The retained v008, v007, v005, and KayKit license/provenance records are
+historical and legal evidence only; no legacy or procedural runtime fallback
+is shipped or supported.

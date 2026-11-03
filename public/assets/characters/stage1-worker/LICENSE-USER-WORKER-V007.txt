@@ -1,0 +1,18 @@
+Just Make Bread — Stage 1 worker v007
+
+This runtime candidate contains the user-authored worker mesh/design and the
+user-approved v007 animation derivative. It exposes the exact Idle_A,
+Walking_A, Holding_A, CarryWalking_A, Running_A, BlockPush_A, BlockPull_A,
+and BlockMoveFront_A actions. The animations are in-place; gameplay owns
+player and production-block position, collision, and lifecycle state.
+
+The mesh/design and v007 animation derivative are user-authored and used with
+permission for this project. No authoring paths, private metadata, provider
+credentials, source archives, or source textures are part of the public
+runtime payload. Running_A is validated for a future run presentation only;
+this build does not add run or dash gameplay input.
+
+The prior v005 worker remains available as the explicit character=v005
+rollback/fallback candidate until motion and visual review closeout. The
+separate KayKit-based v002 asset remains the explicit legacy rollback and
+retains its own CC0 provenance sidecar.

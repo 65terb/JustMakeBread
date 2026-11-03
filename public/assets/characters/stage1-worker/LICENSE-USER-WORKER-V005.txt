@@ -1,0 +1,16 @@
+Just Make Bread — Stage 1 worker v005
+
+This runtime candidate combines a user-authored character mesh/design with motion
+clips from Kay Lousberg's KayKit: Character Animations 1.1, Rig_Medium.
+
+Motion source license: Creative Commons Zero (CC0) 1.0.
+https://creativecommons.org/publicdomain/zero/1.0/
+
+The combined runtime file contains the exact Idle_A, Walking_A, Holding_A, and
+CarryWalking_A clips used by this project. The mesh/design is user-authored;
+the KayKit motion source remains CC0. No authoring paths, private metadata,
+vendor archives, or source textures are part of the public runtime payload.
+
+The older KayKit-based worker v002 remains in the public payload only as an
+explicit rollback asset until reviewer closeout. It is not the default runtime
+candidate.

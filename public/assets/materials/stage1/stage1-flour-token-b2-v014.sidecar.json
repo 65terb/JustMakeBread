@@ -1,0 +1,182 @@
+{
+  "schemaVersion": "1.0",
+  "assetId": "stage1-flour-token-b2-v014",
+  "status": "USER_FINAL_VISUAL_APPROVED_RUNTIME_INTEGRATION_READY",
+  "runtimePrecondition": "P4_PASS_REQUIRED_BEFORE_Q24",
+  "source": {
+    "path": "runtime-candidate/stage1-flour-token-b2-v014.glb",
+    "sha256": "270820AE7A5C21B5825DA1D7284E6ACD540544E93C08891773F9CAB4F3FF8660",
+    "bytes": 2249484,
+    "immutable": true
+  },
+  "intendedRuntime": {
+    "publicPath": "public/assets/materials/stage1/stage1-flour-token-b2-v014.glb",
+    "url": "/assets/materials/stage1/stage1-flour-token-b2-v014.glb",
+    "sidecarUrl": "/assets/materials/stage1/stage1-flour-token-b2-v014.sidecar.json"
+  },
+  "sourceGeometry": {
+    "rootNodes": 1,
+    "meshes": 1,
+    "vertices": 3049,
+    "triangles": 4800,
+    "renderComponents": 25,
+    "boundaryEdges": 1248,
+    "nonManifoldEdges": 1248,
+    "animations": 0,
+    "skins": 0,
+    "rawPositionAccessorMin": [-0.3264088929, -0.4269358218, -0.5],
+    "rawPositionAccessorMax": [0.3264088929, 0.4269358218, 0.5],
+    "geometryMaximumVertexDeviationFromApprovedGeometry": 0.0
+  },
+  "canonicalTransform": {
+    "sourceUpAxis": "+Y",
+    "sourceFrontAxis": "-Z",
+    "sourceUniformScaleToTargetHeight015": 0.1756704314,
+    "userApprovedCanonicalScaleMultiplier": 1.08,
+    "sourceUniformScaleApplied": 0.1897240659,
+    "sourceChildTranslationThree": [0, 0.0810000002, 0],
+    "logicalRootPivot": "bottom-center",
+    "logicalRootOrientationEulerDegreesXYZ": [0, 0, 0]
+  },
+  "canonicalBoundsThreeMeters": {
+    "min": [-0.061927624, 0, -0.0948620364],
+    "max": [0.061927624, 0.1620000005, 0.0948620364],
+    "sizeXYZ": [0.1238552481, 0.1620000005, 0.1897240728],
+    "center": [0, 0.0810000002, 0]
+  },
+  "materials": {
+    "materialCount": 1,
+    "approvedAppearance": "provider-result-light-warm-ivory",
+    "selectedDirectionReference": "B-warm-flour-ivory-#F2EEE4",
+    "userAcceptedLighterThanPreviewResult": true,
+    "uvSets": 1,
+    "embeddedImages": [
+      {
+        "index": 0,
+        "role": "normal",
+        "mimeType": "image/jpeg",
+        "bytes": 169402,
+        "sha256": "49B9C5885D8C4DAA8A99DE2694789A21CB6D6AB53AC03B9AD7E8DBA87CB5256A"
+      },
+      {
+        "index": 1,
+        "role": "base-color",
+        "mimeType": "image/jpeg",
+        "bytes": 223880,
+        "sha256": "C1CA649F14C75574D3AA8A11702CE192B6172385FAE2CB7F98D2FAC98B2494D7"
+      },
+      {
+        "index": 2,
+        "role": "metallic-roughness",
+        "mimeType": "image/png",
+        "bytes": 1727867,
+        "sha256": "B6F3B0B871F359FD39AB95CFA710B258511996967779E8BB2F8E45A7E1FB546B"
+      }
+    ],
+    "externalUris": 0
+  },
+  "namedAnchors": {
+    "tokenRoot": {
+      "position": [0, 0, 0],
+      "description": "Bottom-center logical root used for world, output and physics ownership."
+    },
+    "visualCenter": {
+      "position": [0, 0.0810000002, 0]
+    },
+    "pickupAnchor": {
+      "position": [0, 0.0810000002, 0],
+      "description": "Renderer-owned visual center; interaction still belongs to tokenRoot."
+    },
+    "outputAnchor": {
+      "position": [0, 0, 0],
+      "description": "Place the bottom-center root at the authoritative output trajectory position."
+    }
+  },
+  "heldLayout": {
+    "characterDependency": {
+      "assetId": "stage1-worker-user-v010a",
+      "sha256": "7FFB53974131C8481F44EB22C17E3533AB55E15FE679E5E37C9FD2CFBE315F5F"
+    },
+    "coordinateOrder": ["lateral-x", "forward-z", "height-y"],
+    "baseAnchorSemantic": [0.005, 0.451, 0.843],
+    "baseAnchorThreePlayerLocal": [0.005, 0.843, 0.451],
+    "canonicalAssetScale": 1.08,
+    "perInstanceScaleRelativeToCanonicalAsset": 1.0,
+    "canonicalEulerDegreesXYZ": [0, 0, 0],
+    "horizontalStepMeters": 0.123,
+    "verticalStepMeters": 0.159,
+    "yawAxisThree": "+Y",
+    "layouts": {
+      "1": [
+        {"lateralX": 0.005, "forward": 0.451, "height": 0.843, "yawDegrees": 0}
+      ],
+      "2": [
+        {"lateralX": -0.0565, "forward": 0.451, "height": 0.843, "yawDegrees": -2},
+        {"lateralX": 0.0665, "forward": 0.451, "height": 0.843, "yawDegrees": 2}
+      ],
+      "3": [
+        {"lateralX": -0.0565, "forward": 0.451, "height": 0.843, "yawDegrees": -2},
+        {"lateralX": 0.0665, "forward": 0.451, "height": 0.843, "yawDegrees": 2},
+        {"lateralX": 0.005, "forward": 0.451, "height": 1.002, "yawDegrees": 0}
+      ],
+      "4": [
+        {"lateralX": -0.0565, "forward": 0.451, "height": 0.843, "yawDegrees": -2},
+        {"lateralX": 0.0665, "forward": 0.451, "height": 0.843, "yawDegrees": 2},
+        {"lateralX": -0.0565, "forward": 0.451, "height": 1.002, "yawDegrees": 1},
+        {"lateralX": 0.0665, "forward": 0.451, "height": 1.002, "yawDegrees": -1}
+      ],
+      "5": [
+        {"lateralX": -0.118, "forward": 0.451, "height": 0.843, "yawDegrees": -2},
+        {"lateralX": 0.005, "forward": 0.451, "height": 0.843, "yawDegrees": 0},
+        {"lateralX": 0.128, "forward": 0.451, "height": 0.843, "yawDegrees": 2},
+        {"lateralX": -0.0565, "forward": 0.451, "height": 1.002, "yawDegrees": 1},
+        {"lateralX": 0.0665, "forward": 0.451, "height": 1.002, "yawDegrees": -1}
+      ]
+    },
+    "validatedActions": ["Holding_A", "CarryWalking_A"],
+    "samplesPerAction": 65,
+    "maximumNearestHandDistanceMeters": {
+      "Holding_A": 0.004863529,
+      "CarryWalking_A": 0.0031590813
+    },
+    "nonHandBodyOverlapPairs": 0
+  },
+  "worldOutputPileContract": {
+    "uniformScaleMustEqualHeld": true,
+    "canonicalScale": 1.08,
+    "worldOrientationAuthority": "future-token-physics",
+    "outputOrientationAuthority": "presentation-trajectory-then-future-token-physics",
+    "pileOrientationAuthority": "future-token-physics",
+    "deterministicQaPile5BoundsMetersXYZ": [0.3614494285, 0.1620000005, 0.373432016],
+    "noPerStateScaleOverride": true
+  },
+  "collisionAndPhysics": {
+    "renderTrianglesHaveGameplayAuthority": false,
+    "renderComponentsHaveIndependentIdentity": false,
+    "oneRootOnly": true,
+    "requiredProxy": {
+      "type": "closed-box",
+      "shapeCount": 1,
+      "center": [0, 0.0810000002, 0],
+      "sizeXYZ": [0.1238552481, 0.1620000005, 0.1897240728],
+      "halfExtentsXYZ": [0.061927624, 0.0810000002, 0.0948620364],
+      "bottomAligned": true,
+      "closed": true,
+      "useFor": ["collision", "raycast", "pickup", "output-spacing", "future-token-physics"]
+    },
+    "forbidden": [
+      "raw-triangle collision or raycast",
+      "per-component colliders or gameplay identities",
+      "per-state or per-token scale overrides",
+      "mesh deformation, destruction or skinning"
+    ]
+  },
+  "validation": {
+    "bplusModes": ["ortho", "balanced", "perspective"],
+    "viewports": [[800, 600], [1280, 720], [1920, 1080]],
+    "geometryIdentityPassed": true,
+    "externalUriCount": 0,
+    "userFinalVisualApproved": true,
+    "runtimeIntegrationPerformed": false
+  }
+}

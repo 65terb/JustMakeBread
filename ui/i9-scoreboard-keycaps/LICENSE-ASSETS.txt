@@ -1,0 +1,7 @@
+I9 scoreboard keycap and tutorial-panel raster assets
+
+The project-authored keycap silhouettes, palette composition, atlases, tutorial-panel texture and canonical preview in this package are dedicated to the public domain under CC0 1.0.
+SPDX-License-Identifier: CC0-1.0
+License text: https://creativecommons.org/publicdomain/zero/1.0/legalcode
+
+Labels are rendered with Galmuri11 Bold. The bundled font software remains licensed under the SIL Open Font License 1.1; see sources/font/OFL-1.1.txt. The PNG output is not font software and is not subject to the OFL redistribution conditions for font binaries.

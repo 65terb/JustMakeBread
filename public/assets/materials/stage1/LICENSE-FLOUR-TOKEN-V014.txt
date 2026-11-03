@@ -1,0 +1,18 @@
+Just Make Bread - Stage 1 flour token B2 V014
+
+File: stage1-flour-token-b2-v014.glb
+SHA-256: 270820AE7A5C21B5825DA1D7284E6ACD540544E93C08891773F9CAB4F3FF8660
+Size: 2,249,484 bytes
+
+This user-final-approved flour token was generated through the Tripo service
+from the approved B2 folded-top flour-sack direction. Use and redistribution
+remain subject to the applicable Tripo terms:
+https://www.tripo3d.ai/terms
+
+The runtime uses the approved GLB bytes unchanged. The canonical 1.08 scale,
+bottom-center transform, held layout, and one closed gameplay proxy are runtime
+contract values. Raw render triangles do not own collision, raycast, or physics.
+
+This provenance record is not legal advice. No local authoring paths, private
+identity, email address, provider credential, signed URL, or source archive is
+part of the public runtime payload.

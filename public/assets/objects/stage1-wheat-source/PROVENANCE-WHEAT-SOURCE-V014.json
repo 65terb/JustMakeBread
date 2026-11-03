@@ -1,0 +1,15 @@
+{
+  "schemaVersion": "1.0",
+  "status": "user-final-visual-approved-runtime-integration-ready",
+  "provider": "tripo-api",
+  "assetId": "stage1-wheat-source-v014",
+  "taskType": "texture_model",
+  "taskId": "2d6f321d-8ebd-41ce-92a8-544c26bfb17b",
+  "originalModelTaskId": "702110a7-63e4-4b62-8e30-b7e1c8144831",
+  "sourceSha256": "ADC78BF98B72ED807A26008E08F3273DDBC6570E5582B8A453F6C6DC29578BC8",
+  "sourceBytes": 3013048,
+  "termsUrl": "https://www.tripo3d.ai/terms",
+  "termsCheckedDate": "2026-08-12",
+  "userDecision": "explicit final visual approval; provider gray-gradient cavity and raw topology notes are accepted non-blocking facts",
+  "runtimeBoundary": "raw render triangles have no collision, raycast or component identity authority; use the approved sidecar proxy and named anchors"
+}

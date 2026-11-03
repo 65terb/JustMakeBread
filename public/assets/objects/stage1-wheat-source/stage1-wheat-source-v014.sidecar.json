@@ -1,0 +1,63 @@
+{
+  "schemaVersion": "1.0",
+  "assetId": "stage1-wheat-source-v014-textured",
+  "status": "user-final-visual-approved-runtime-integration-ready",
+  "source": {
+    "sha256": "ADC78BF98B72ED807A26008E08F3273DDBC6570E5582B8A453F6C6DC29578BC8",
+    "bytes": 3013048
+  },
+  "transform": {
+    "uniformScale": 0.86,
+    "rootPositionMeters": [0, 0, 0],
+    "rootOrientation": "local +X points from wall toward player/play space",
+    "rawBoundsXYZ": [0.9963564872741699, 1.0, 0.9875270128250122],
+    "pivot": "provider-root center; wall attachment resolved by named anchor",
+    "normalizedThreeBoundsXYZMeters": [0.8568665790557861, 0.8492732310295105, 0.86],
+    "normalizedBoundsMinMeters": [-0.42843328952789305, -0.42463661551475525, -0.43],
+    "normalizedBoundsMaxMeters": [0.42843328952789305, 0.42463661551475525, 0.43]
+  },
+  "inventory": {
+    "meshes": 1,
+    "vertices": 3811,
+    "triangles": 5579,
+    "materials": 1,
+    "textures": 3,
+    "embeddedImages": 3,
+    "externalUris": 0,
+    "positionHashRounded1e7": "684D6260D591AD1C5DEF39D6A0AD1C0233B2D76A88ABF7410A5773FC6A5E139"
+  },
+  "namedRendererAnchors": {
+    "wallAttachment": {
+      "positionMeters": [-0.42843328952789305, 0, 0],
+      "wallFacingNormal": [-1, 0, 0],
+      "outwardNormal": [1, 0, 0]
+    },
+    "outletLip": {
+      "positionMeters": [0.37331305861473085, 0, 0],
+      "outwardNormal": [1, 0, 0],
+      "clearOpeningRadiusMetersApprox": 0.2408
+    },
+    "cavityCenterline": {
+      "originMeters": [0.37331305861473085, 0, 0],
+      "direction": [1, 0, 0]
+    },
+    "wheatSpawn": {
+      "positionMeters": [0.1515436127865448, 0, 0],
+      "behindLipMeters": 0.22176944582818606
+    },
+    "wheatExit": {
+      "positionMeters": [0.5533130586147308, 0, 0],
+      "beyondLipMeters": 0.18
+    }
+  },
+  "runtimeProxy": {
+    "type": "one-closed-conservative-box3",
+    "boundsMinMeters": [-0.42843428952789303, -0.4246376155147552, -0.430001],
+    "boundsMaxMeters": [0.42843428952789303, 0.4246376155147552, 0.43000099999999997],
+    "rawRenderTrianglesAuthority": false,
+    "cavityAuthority": false,
+    "clearanceMeters": 0.000001,
+    "tokenCollisionRule": "wheat and output presentation ignore this source interaction proxy",
+    "componentLevelGameplayIdentity": false
+  }
+}

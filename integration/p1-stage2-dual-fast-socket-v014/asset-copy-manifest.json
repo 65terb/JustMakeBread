@@ -1,0 +1,82 @@
+{
+  "schemaVersion": "1.0",
+  "handoffId": "P1-STAGE2-DUAL-FAST-SOCKET-V014-ASSET-ONLY",
+  "sourceWorktree": "presentation-worktree",
+  "targetRoot": "public/assets/objects/stage2-q40",
+  "copyMode": "add-versioned-files-only-no-overwrite",
+  "files": [
+    {
+      "path": "public/assets/objects/stage2-q40/shared-process-block-stage2-v014.glb",
+      "bytes": 29244,
+      "sha256": "83CCD58C23C7472A0868207999696D1F2BE0C7F089B3BDBB2C93C7682170852E",
+      "kind": "runtime-glb"
+    },
+    {
+      "path": "public/assets/objects/stage2-q40/shared-process-block-stage2-v014.sidecar.json",
+      "bytes": 8993,
+      "sha256": "74704D99C19DFB12B86FE9237439D168161F56CBDB03E762CC93C83E692F3539",
+      "kind": "runtime-sidecar"
+    },
+    {
+      "path": "public/assets/objects/stage2-q40/shared-process-block-stage2-v014.provenance.md",
+      "bytes": 1754,
+      "sha256": "E16C4BD93215059812FE9EFC03A06CD4A6BD7E790BF0892A514F4AFFED3A9FFD",
+      "kind": "asset-provenance"
+    },
+    {
+      "path": "public/assets/objects/stage2-q40/shared-process-block-stage2-v014.license.md",
+      "bytes": 1208,
+      "sha256": "6EE70A382851956E8B1B00B6611F3039E8D0A83A71DC14B221D44AE7AFF91780",
+      "kind": "approval-license-boundary"
+    }
+  ],
+  "preserveExisting": [
+    "public/assets/objects/stage2-q40/shared-process-block-stage0-v012.glb",
+    "public/assets/objects/stage2-q40/shared-process-block-stage1-v010.glb"
+  ],
+  "glbValidationFingerprint": {
+    "generator": "Khronos glTF Blender I/O v5.2.39",
+    "sceneRootNode": "sharedProcessBlockGeometry",
+    "rootDirectChildCount": 9,
+    "requiredDirectChildren": [
+      "collisionFootprintAnchor",
+      "fastPocketSeatLeft",
+      "fastPocketSeatRight",
+      "functionNameFace",
+      "outputMouth",
+      "rotationPivot",
+      "tokenExitAnchor",
+      "topCapacityAnchor",
+      "topProgressAnchor"
+    ],
+    "meshCount": 1,
+    "vertexCount": 460,
+    "triangleCount": 492,
+    "accessorCounts": [460, 460, 460, 460, 1476],
+    "bufferViews": [
+      {"byteOffset": 0, "byteLength": 5520, "target": 34962},
+      {"byteOffset": 5520, "byteLength": 5520, "target": 34962},
+      {"byteOffset": 11040, "byteLength": 3680, "target": 34962},
+      {"byteOffset": 14720, "byteLength": 7360, "target": 34962},
+      {"byteOffset": 22080, "byteLength": 2952, "target": 34963}
+    ],
+    "binaryBufferBytes": 25032,
+    "materialCount": 0,
+    "imageCount": 0,
+    "textureCount": 0,
+    "animationCount": 0,
+    "externalUriCount": 0
+  },
+  "implementationSeams": {
+    "currentQ40ProcessVariantHasStage2": false,
+    "currentRuntimeCandidateSetHasStage2": false,
+    "currentStatusSocketNameCollectorAcceptsLeftRight": false,
+    "requiredStatusInput": "typed authoritative current-or-terminal socket-bank snapshot",
+    "forbidRawChildAverage": true,
+    "preserveStatusAggregateIdentity": true,
+    "stageAuthorityMustRemainExternal": true
+  },
+  "runtimeRegistryChangesRequired": true,
+  "runtimeRegistryOwnedByImplementer": true,
+  "primaryModifiedByThisHandoff": false
+}

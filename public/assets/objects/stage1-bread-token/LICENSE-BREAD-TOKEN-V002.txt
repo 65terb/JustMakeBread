@@ -1,0 +1,22 @@
+Just Make Bread — Stage 1 bread token Color A v002
+
+File: stage1-bread-token-tripo-color-a-v002.glb
+SHA-256: 1E84A567BB72D9491101884644E1A7AC52B4A9DA65C7594172A66AB32D485515
+Size: 2,647,132 bytes
+
+This project-specific bread token was generated through the Tripo service
+from user-approved visual direction inputs, then technically normalized for
+runtime use. The user approved the resulting geometry and embedded Color A
+material for Just Make Bread. Use and redistribution remain subject to the
+applicable Tripo terms:
+https://www.tripo3d.ai/terms
+
+The runtime derivative applies axis alignment, one uniform scale, X/depth
+centering, and a bottom-center pivot only. It does not recolor, nonuniformly
+reshape, resculpt, optimize, remesh, or replace the approved payload. The GLB
+contains embedded base-color, metallic/roughness, and normal images and does
+not require external texture files.
+
+This provenance record is not legal advice. No local authoring paths, private
+identity, email address, provider credential, signed URL, or source archive is
+part of the public runtime payload.

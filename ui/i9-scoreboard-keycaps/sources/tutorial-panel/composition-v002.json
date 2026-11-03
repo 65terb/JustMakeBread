@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "tutorial-panel-v002",
+  "size": { "width": 3040, "height": 1000 },
+  "panelAspect": 3.04,
+  "background": "#263746",
+  "font": "Galmuri11 Bold",
+  "safePadding": { "left": 180, "right": 180, "top": 80, "bottom": 80 },
+  "rows": [
+    { "keycaps": ["W"], "label": "", "centerY": 170 },
+    { "keycaps": ["A", "S", "D"], "label": "이동", "centerY": 390 },
+    { "keycaps": ["E"], "label": "상호작용", "centerY": 610 },
+    { "keycaps": ["SPACE"], "label": "블록 옮기기", "centerY": 830 }
+  ],
+  "contentOwnership": "physical-scoreboard-template.panel.material.map",
+  "standaloneSceneChildren": 0
+}

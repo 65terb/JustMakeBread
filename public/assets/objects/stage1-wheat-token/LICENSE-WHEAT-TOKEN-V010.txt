@@ -1,0 +1,19 @@
+Just Make Bread — Stage 1 wheat token Color A v010
+
+File: wheat-token-v010-color-a-v001.glb
+SHA-256: BE5F9CAF6B1B7E6C3E5090E07A3FFDEF529C0CE8739D08EED398596B4A1CFE1F
+Size: 2,843,448 bytes
+
+This project-specific wheat token was generated through the Tripo service from
+user-approved visual direction inputs. The user approved the Color A runtime
+candidate and the flat-on-palm runtime contract for Just Make Bread. Use and
+redistribution remain subject to the applicable Tripo terms:
+https://www.tripo3d.ai/terms
+
+The runtime uses the approved GLB bytes unchanged. Presentation scale and the
+held transform are runtime contract values; raw render triangles do not own
+collision, raycast, or physics. A separate closed gameplay proxy is used.
+
+This provenance record is not legal advice. No local authoring paths, private
+identity, email address, provider credential, signed URL, or source archive is
+part of the public runtime payload.

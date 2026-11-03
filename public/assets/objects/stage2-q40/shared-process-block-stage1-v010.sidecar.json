@@ -1,0 +1,129 @@
+{
+  "schemaVersion": "1.0",
+  "ticket": "Q-20260812-29-runtime-integration",
+  "status": "ready-not-integrated",
+  "approvedGeometry": {
+    "path": "shared-process-block-local-trial-v010.glb",
+    "bytes": 26080,
+    "sha256": "C910EEC88852015170E06CF9B222B20F35116DA9A3A123CB8119B5EFBFAEF369",
+    "oneSharedGeometryForRoles": ["mill", "heater"],
+    "metersPerAssetUnit": 1
+  },
+  "orientation": {
+    "frontNameFace": "-Y",
+    "outputFace": "+X",
+    "up": "+Z",
+    "pivot": [0, 0, 0]
+  },
+  "boundsAndCollision": {
+    "shellDimensionsMeters": [1.9, 1.72, 1.9],
+    "shellBoundsMeters": {
+      "min": [-0.95, -0.86, -0.95],
+      "max": [0.95, 0.86, 0.95]
+    },
+    "assemblyDimensionsIncludingCollarMeters": [2.15, 1.72, 1.9],
+    "collisionFootprintMeters": [2.2, 2.2],
+    "collisionFootprintChanged": false,
+    "mapClearanceImpact": "none under the frozen 2.2x2.2 collision contract"
+  },
+  "presentationLayoutProfile": {
+    "profileId": "p1-production-block-status-layout-v001",
+    "sharedByStages": ["stage0", "stage1", "stage2"],
+    "functionName": {
+      "surface": "shell-top",
+      "flat": true,
+      "center": [0, 0.866, 0],
+      "planeNormal": [0, 1, 0],
+      "widthMeters": 1.85,
+      "heightMeters": 0.70,
+      "centerDerivation": "shellBoundsMeters top-face center plus 0.006m epsilon"
+    },
+    "progressGauge": {
+      "surface": "shell-front",
+      "center": [0, 0.52500000475, 0.9559999881],
+      "planeNormal": [0, 0, 1],
+      "widthMeters": 1.46,
+      "heightMeters": 0.2,
+      "bottomGapMeters": 0.1,
+      "socketToShellTopPlacementRatio": 0.5,
+      "trackDepthMeters": 0.04,
+      "trackBackInsetMeters": 0.038,
+      "trackFrontProtrusionMeters": 0.002,
+      "fillDepthMeters": 0.004,
+      "fillFrontProtrusionMeters": 0.006,
+      "trackColor": "#263746",
+      "millFillColor": "#39D3E0",
+      "heaterFillColor": "#FF9A4D",
+      "trackRoughness": 0.78,
+      "trackMetalness": 0.02,
+      "fillRoughness": 0.5,
+      "fillMetalness": 0.02,
+      "fillEmissiveIntensity": 0.08,
+      "opticalCenteringMaxMeters": 0.15,
+      "opticalCenteringPixelDeadband": 0.5,
+      "centerDerivation": "model/face frame desired center; shell center horizontal x; lower center is authoritative current-or-terminal socket-bank opening union maxY plus bottomGapMeters plus half gaugeHeightMeters; upper center is transformed shell/front top edge minus half gaugeHeightMeters; socketToShellTopPlacementRatio interpolates the finite clearance band; authored functionNameFace plane; convert once to functionNameFace local; physical track/fill boxes use face-local depth profile",
+      "rawAnchorChildAverageForbidden": true
+    },
+    "capacityCells": {
+      "presentation": "floating-world-billboard-cells",
+      "center": [0, 1.56, 0],
+      "centerDerivation": "shellBoundsMeters transformed top-face center plus floatOffsetMeters; optical correction targets the transformed shell top-edge projected centroid",
+      "cellWidthMeters": 0.24,
+      "cellHeightMeters": 0.24,
+      "cellDepthMeters": 0.024,
+      "cellGapMeters": 0.035,
+      "cellGapMaximumMeters": 0.18,
+      "rowWidthTargetRatio": 0.9,
+      "gapDerivation": "transformed shell top-edge width times rowWidthTargetRatio, less capacity-derived cell width, clamped between cellGapMeters and cellGapMaximumMeters; no capacity-count or stage-specific coordinates",
+      "floatOffsetMeters": 0.7,
+      "wallAlignmentTiltDegrees": 30,
+      "projectedAspectMinimum": 0.85,
+      "projectedAspectMaximum": 1.15,
+      "opticalCenteringMaxMeters": 0.15,
+      "opticalCenteringPixelDeadband": 0.5,
+      "storedColor": "#d9a441",
+      "reservedColor": "#e2c987",
+      "emptyColor": "#7e8a86",
+      "storedOpacity": 0.96,
+      "reservedOpacity": 0.52,
+      "emptyOpacity": 0.95,
+      "runtimeTextCanvasForbidden": true,
+      "assetBakedCapacityForbidden": true
+    }
+  },
+  "anchors": {
+    "functionNameFace": {"role": "runtime child for 분쇄 or 굽기", "bodyMaterialIndependent": true},
+    "topProgressAnchor": {"role": "runtime progress child", "bodyMaterialIndependent": true},
+    "topCapacityAnchor": {"role": "runtime 1/5 child", "bodyMaterialIndependent": true},
+    "fastPocketSeat": {"openingMeters": [0.7, 0.7], "insertionAxis": "+Y", "blind": true},
+    "outputMouth": {"openingMeters": [0.7, 0.7], "doubleInsertionAxis": "-X", "open": true},
+    "tokenExitAnchor": {"tokenPathAxis": "+X", "independentFromFastPocket": true},
+    "rotationPivot": {"role": "asset root pivot"},
+    "collisionFootprintAnchor": {"role": "2.2x2.2 contract reference"}
+  },
+  "runtimeMaterialContract": {
+    "shell": "casual matte broad soft diffuse, high roughness, low specular, nonmetallic",
+    "bakedMaterial": false,
+    "millHeaterRoleDifference": "runtime configuration only"
+  },
+  "semanticChildContract": {
+    "allTextGaugeCountProgressStateIndependentFromGeometry": true,
+    "assetSwapSafe": true,
+    "hardCodedCurrentVertexIndicesForbidden": true,
+    "useNamedAnchorsAndTransformedBounds": true
+  },
+  "fitContract": {
+    "q28CubeSha256": "FE6CECF782405AA474CC9BA57D154A2A266BEAABE5664111C01302F5C80D7E29",
+    "cubeMeters": 0.68,
+    "openingMeters": 0.7,
+    "clearanceMetersPerSide": 0.01,
+    "proofPercent": [0, 25, 50, 75, 100]
+  },
+  "runtimeSafety": {
+    "fastPocketAndOutputShareTunnel": false,
+    "tokenEmissionUsesOutputOnly": true,
+    "collisionAndInteractionIndependentFromPresentationChildren": true
+  },
+  "integrationPerformed": false,
+  "primaryPublicPackageModified": false
+}

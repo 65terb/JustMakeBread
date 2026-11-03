@@ -1,0 +1,146 @@
+{
+  "schemaVersion": 1,
+  "generatorContract": "i9-keycap-raster-v003-black-outline",
+  "borderRgb": "#000000",
+  "sourceDisplayScale": 4,
+  "expectedSourceThicknessPx4x": 20,
+  "expectedAtlasThicknessPx": {
+    "1x": 5,
+    "2x": 10
+  },
+  "atlasGeometryPreserved": true,
+  "samples": [
+    {
+      "label": "W",
+      "kind": "standard",
+      "source": "sources/keycaps/standard-w-normal-4x.png",
+      "sourceThicknessPx4x": 20,
+      "pureBlackOpaquePixels": 33948,
+      "alphaZeroRgbClean": true
+    },
+    {
+      "label": "A",
+      "kind": "standard",
+      "source": "sources/keycaps/standard-a-normal-4x.png",
+      "sourceThicknessPx4x": 20,
+      "pureBlackOpaquePixels": 33948,
+      "alphaZeroRgbClean": true
+    },
+    {
+      "label": "S",
+      "kind": "standard",
+      "source": "sources/keycaps/standard-s-normal-4x.png",
+      "sourceThicknessPx4x": 20,
+      "pureBlackOpaquePixels": 33948,
+      "alphaZeroRgbClean": true
+    },
+    {
+      "label": "D",
+      "kind": "standard",
+      "source": "sources/keycaps/standard-d-normal-4x.png",
+      "sourceThicknessPx4x": 20,
+      "pureBlackOpaquePixels": 33948,
+      "alphaZeroRgbClean": true
+    },
+    {
+      "label": "E",
+      "kind": "standard",
+      "source": "sources/keycaps/standard-e-normal-4x.png",
+      "sourceThicknessPx4x": 20,
+      "pureBlackOpaquePixels": 33948,
+      "alphaZeroRgbClean": true
+    },
+    {
+      "label": "Q",
+      "kind": "standard",
+      "source": "sources/keycaps/standard-q-normal-4x.png",
+      "sourceThicknessPx4x": 20,
+      "pureBlackOpaquePixels": 33948,
+      "alphaZeroRgbClean": true
+    },
+    {
+      "label": "ARROW-UP",
+      "kind": "standard",
+      "source": "sources/keycaps/standard-arrow-up-normal-4x.png",
+      "sourceThicknessPx4x": 20,
+      "pureBlackOpaquePixels": 33948,
+      "alphaZeroRgbClean": true
+    },
+    {
+      "label": "ARROW-LEFT",
+      "kind": "standard",
+      "source": "sources/keycaps/standard-arrow-left-normal-4x.png",
+      "sourceThicknessPx4x": 20,
+      "pureBlackOpaquePixels": 33948,
+      "alphaZeroRgbClean": true
+    },
+    {
+      "label": "ARROW-DOWN",
+      "kind": "standard",
+      "source": "sources/keycaps/standard-arrow-down-normal-4x.png",
+      "sourceThicknessPx4x": 20,
+      "pureBlackOpaquePixels": 33948,
+      "alphaZeroRgbClean": true
+    },
+    {
+      "label": "ARROW-RIGHT",
+      "kind": "standard",
+      "source": "sources/keycaps/standard-arrow-right-normal-4x.png",
+      "sourceThicknessPx4x": 20,
+      "pureBlackOpaquePixels": 33948,
+      "alphaZeroRgbClean": true
+    },
+    {
+      "label": "SPACE",
+      "kind": "wide",
+      "source": "sources/keycaps/wide-space-normal-4x.png",
+      "sourceThicknessPx4x": 20,
+      "pureBlackOpaquePixels": 60572,
+      "alphaZeroRgbClean": true
+    },
+    {
+      "label": "SHIFT",
+      "kind": "wide",
+      "source": "sources/keycaps/wide-shift-normal-4x.png",
+      "sourceThicknessPx4x": 20,
+      "pureBlackOpaquePixels": 60572,
+      "alphaZeroRgbClean": true
+    }
+  ],
+  "atlases": [
+    {
+      "scale": 1,
+      "path": "deliverables/keycaps/keycaps-atlas-1x.png",
+      "sha256": "3520da92a522b2c6e5be54ad9a51bec1740e1c7ea5a11a3e1a2677ab394711c2",
+      "width": 2176,
+      "height": 384,
+      "alphaZeroRgbClean": true,
+      "pureBlackOpaquePixels": 45776,
+      "apparentThicknessPx": {
+        "standard": 5,
+        "wide": 5
+      }
+    },
+    {
+      "scale": 2,
+      "path": "deliverables/keycaps/keycaps-atlas-2x.png",
+      "sha256": "9eaba93c5fe6a45c09490c6b554cad458252ef7440780699b56d2487d5696512",
+      "width": 4352,
+      "height": 768,
+      "alphaZeroRgbClean": true,
+      "pureBlackOpaquePixels": 292808,
+      "apparentThicknessPx": {
+        "standard": 10,
+        "wide": 10
+      }
+    }
+  ],
+  "canonical": {
+    "baselineReference": "canonical/i9-scoreboard-keycaps-system-v002.png",
+    "approvedCandidate": "canonical/i9-scoreboard-keycaps-system-v003-black-outline.png",
+    "approvedCandidateSha256": "c615ca76366a6c0b8ad6a8a8bae8cdde0e937d804810353c61e33fd1635ec9ce",
+    "comparison": "qa/keycap-border-comparison-v002-v003.png",
+    "comparisonSha256": "3ece48e268c5280e0636a9a7fef26fad3674127ea95b03460bb301d3abd47d5b"
+  },
+  "shiftRuntimeBinding": null
+}

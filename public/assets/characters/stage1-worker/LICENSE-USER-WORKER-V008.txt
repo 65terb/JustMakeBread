@@ -1,0 +1,19 @@
+Just Make Bread — Stage 1 worker v008
+
+This runtime candidate contains the user-authored worker mesh/design and the
+user-approved v008 block-manipulation animation derivative. It exposes the
+exact Idle_A, Walking_A, Holding_A, CarryWalking_A, Running_A, BlockPush_A,
+BlockPull_A, and BlockMoveFront_A actions. The animations are in-place;
+authoritative gameplay owns player and production-block position, collision,
+input, and lifecycle state.
+
+The v008 derivative changes only the three block-manipulation clips to a
+24-frame alternating stump-step loop. Its stepping phase is presentation-only
+and follows accepted production-block X displacement; it does not add run or
+dash gameplay, root motion, or a new gameplay timing rule. The user-authored
+mesh/design and animation derivative are used with permission for this project.
+
+No authoring paths, private metadata, provider credentials, source archives, or
+source textures are part of the public runtime payload. Running_A remains
+validation-only. The prior v007, v005, and separate KayKit-based v002 assets
+remain versioned rollback/fallback paths with their own provenance sidecars.

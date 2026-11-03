@@ -1,0 +1,14 @@
+Stage1 wheat-source V014 runtime asset
+
+File: stage1-wheat-source-v014-textured.glb
+SHA-256: ADC78BF98B72ED807A26008E08F3273DDBC6570E5582B8A453F6C6DC29578BC8
+Bytes: 3,013,048
+Provider: Tripo API texture_model output
+
+The output is retained under the paid-user rights and terms recorded in the
+adjacent provenance file. Terms: https://www.tripo3d.ai/terms
+Terms checked: 2026-08-12
+
+This operational record is not legal advice or a non-infringement warranty.
+The raw render mesh has no gameplay, collision, raycast, or component identity
+authority. Runtime uses the adjacent approved sidecar anchors and closed proxy.

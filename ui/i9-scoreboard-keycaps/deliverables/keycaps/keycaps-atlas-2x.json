@@ -1,0 +1,766 @@
+{
+  "schemaVersion": 1,
+  "scale": 2,
+  "width": 4352,
+  "height": 768,
+  "alpha": true,
+  "colorSpace": "srgb",
+  "entries": [
+    {
+      "id": "standard-blank-normal",
+      "label": "BLANK",
+      "kind": "standard",
+      "state": "normal",
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 256,
+        "height": 256
+      },
+      "uv": {
+        "u0": 0.0,
+        "v0": 0.0,
+        "u1": 0.058823529411764705,
+        "v1": 0.3333333333333333
+      }
+    },
+    {
+      "id": "standard-w-normal",
+      "label": "W",
+      "kind": "standard",
+      "state": "normal",
+      "rect": {
+        "x": 256,
+        "y": 0,
+        "width": 256,
+        "height": 256
+      },
+      "uv": {
+        "u0": 0.058823529411764705,
+        "v0": 0.0,
+        "u1": 0.11764705882352941,
+        "v1": 0.3333333333333333
+      }
+    },
+    {
+      "id": "standard-a-normal",
+      "label": "A",
+      "kind": "standard",
+      "state": "normal",
+      "rect": {
+        "x": 512,
+        "y": 0,
+        "width": 256,
+        "height": 256
+      },
+      "uv": {
+        "u0": 0.11764705882352941,
+        "v0": 0.0,
+        "u1": 0.17647058823529413,
+        "v1": 0.3333333333333333
+      }
+    },
+    {
+      "id": "standard-s-normal",
+      "label": "S",
+      "kind": "standard",
+      "state": "normal",
+      "rect": {
+        "x": 768,
+        "y": 0,
+        "width": 256,
+        "height": 256
+      },
+      "uv": {
+        "u0": 0.17647058823529413,
+        "v0": 0.0,
+        "u1": 0.23529411764705882,
+        "v1": 0.3333333333333333
+      }
+    },
+    {
+      "id": "standard-d-normal",
+      "label": "D",
+      "kind": "standard",
+      "state": "normal",
+      "rect": {
+        "x": 1024,
+        "y": 0,
+        "width": 256,
+        "height": 256
+      },
+      "uv": {
+        "u0": 0.23529411764705882,
+        "v0": 0.0,
+        "u1": 0.29411764705882354,
+        "v1": 0.3333333333333333
+      }
+    },
+    {
+      "id": "standard-e-normal",
+      "label": "E",
+      "kind": "standard",
+      "state": "normal",
+      "rect": {
+        "x": 1280,
+        "y": 0,
+        "width": 256,
+        "height": 256
+      },
+      "uv": {
+        "u0": 0.29411764705882354,
+        "v0": 0.0,
+        "u1": 0.35294117647058826,
+        "v1": 0.3333333333333333
+      }
+    },
+    {
+      "id": "wide-blank-normal",
+      "label": "BLANK",
+      "kind": "wide",
+      "state": "normal",
+      "rect": {
+        "x": 1536,
+        "y": 0,
+        "width": 512,
+        "height": 256
+      },
+      "uv": {
+        "u0": 0.35294117647058826,
+        "v0": 0.0,
+        "u1": 0.47058823529411764,
+        "v1": 0.3333333333333333
+      }
+    },
+    {
+      "id": "wide-space-normal",
+      "label": "SPACE",
+      "kind": "wide",
+      "state": "normal",
+      "rect": {
+        "x": 2048,
+        "y": 0,
+        "width": 512,
+        "height": 256
+      },
+      "uv": {
+        "u0": 0.47058823529411764,
+        "v0": 0.0,
+        "u1": 0.5882352941176471,
+        "v1": 0.3333333333333333
+      }
+    },
+    {
+      "id": "wide-shift-normal",
+      "label": "SHIFT",
+      "kind": "wide",
+      "state": "normal",
+      "rect": {
+        "x": 2560,
+        "y": 0,
+        "width": 512,
+        "height": 256
+      },
+      "uv": {
+        "u0": 0.5882352941176471,
+        "v0": 0.0,
+        "u1": 0.7058823529411765,
+        "v1": 0.3333333333333333
+      }
+    },
+    {
+      "id": "standard-q-normal",
+      "label": "Q",
+      "kind": "standard",
+      "state": "normal",
+      "rect": {
+        "x": 3072,
+        "y": 0,
+        "width": 256,
+        "height": 256
+      },
+      "uv": {
+        "u0": 0.7058823529411765,
+        "v0": 0.0,
+        "u1": 0.7647058823529411,
+        "v1": 0.3333333333333333
+      }
+    },
+    {
+      "id": "standard-arrow-up-normal",
+      "label": "ARROWUP",
+      "kind": "standard",
+      "state": "normal",
+      "rect": {
+        "x": 3328,
+        "y": 0,
+        "width": 256,
+        "height": 256
+      },
+      "uv": {
+        "u0": 0.7647058823529411,
+        "v0": 0.0,
+        "u1": 0.8235294117647058,
+        "v1": 0.3333333333333333
+      }
+    },
+    {
+      "id": "standard-arrow-left-normal",
+      "label": "ARROWLEFT",
+      "kind": "standard",
+      "state": "normal",
+      "rect": {
+        "x": 3584,
+        "y": 0,
+        "width": 256,
+        "height": 256
+      },
+      "uv": {
+        "u0": 0.8235294117647058,
+        "v0": 0.0,
+        "u1": 0.8823529411764706,
+        "v1": 0.3333333333333333
+      }
+    },
+    {
+      "id": "standard-arrow-down-normal",
+      "label": "ARROWDOWN",
+      "kind": "standard",
+      "state": "normal",
+      "rect": {
+        "x": 3840,
+        "y": 0,
+        "width": 256,
+        "height": 256
+      },
+      "uv": {
+        "u0": 0.8823529411764706,
+        "v0": 0.0,
+        "u1": 0.9411764705882353,
+        "v1": 0.3333333333333333
+      }
+    },
+    {
+      "id": "standard-arrow-right-normal",
+      "label": "ARROWRIGHT",
+      "kind": "standard",
+      "state": "normal",
+      "rect": {
+        "x": 4096,
+        "y": 0,
+        "width": 256,
+        "height": 256
+      },
+      "uv": {
+        "u0": 0.9411764705882353,
+        "v0": 0.0,
+        "u1": 1.0,
+        "v1": 0.3333333333333333
+      }
+    },
+    {
+      "id": "standard-blank-lit",
+      "label": "BLANK",
+      "kind": "standard",
+      "state": "lit",
+      "rect": {
+        "x": 0,
+        "y": 256,
+        "width": 256,
+        "height": 256
+      },
+      "uv": {
+        "u0": 0.0,
+        "v0": 0.3333333333333333,
+        "u1": 0.058823529411764705,
+        "v1": 0.6666666666666666
+      }
+    },
+    {
+      "id": "standard-w-lit",
+      "label": "W",
+      "kind": "standard",
+      "state": "lit",
+      "rect": {
+        "x": 256,
+        "y": 256,
+        "width": 256,
+        "height": 256
+      },
+      "uv": {
+        "u0": 0.058823529411764705,
+        "v0": 0.3333333333333333,
+        "u1": 0.11764705882352941,
+        "v1": 0.6666666666666666
+      }
+    },
+    {
+      "id": "standard-a-lit",
+      "label": "A",
+      "kind": "standard",
+      "state": "lit",
+      "rect": {
+        "x": 512,
+        "y": 256,
+        "width": 256,
+        "height": 256
+      },
+      "uv": {
+        "u0": 0.11764705882352941,
+        "v0": 0.3333333333333333,
+        "u1": 0.17647058823529413,
+        "v1": 0.6666666666666666
+      }
+    },
+    {
+      "id": "standard-s-lit",
+      "label": "S",
+      "kind": "standard",
+      "state": "lit",
+      "rect": {
+        "x": 768,
+        "y": 256,
+        "width": 256,
+        "height": 256
+      },
+      "uv": {
+        "u0": 0.17647058823529413,
+        "v0": 0.3333333333333333,
+        "u1": 0.23529411764705882,
+        "v1": 0.6666666666666666
+      }
+    },
+    {
+      "id": "standard-d-lit",
+      "label": "D",
+      "kind": "standard",
+      "state": "lit",
+      "rect": {
+        "x": 1024,
+        "y": 256,
+        "width": 256,
+        "height": 256
+      },
+      "uv": {
+        "u0": 0.23529411764705882,
+        "v0": 0.3333333333333333,
+        "u1": 0.29411764705882354,
+        "v1": 0.6666666666666666
+      }
+    },
+    {
+      "id": "standard-e-lit",
+      "label": "E",
+      "kind": "standard",
+      "state": "lit",
+      "rect": {
+        "x": 1280,
+        "y": 256,
+        "width": 256,
+        "height": 256
+      },
+      "uv": {
+        "u0": 0.29411764705882354,
+        "v0": 0.3333333333333333,
+        "u1": 0.35294117647058826,
+        "v1": 0.6666666666666666
+      }
+    },
+    {
+      "id": "wide-blank-lit",
+      "label": "BLANK",
+      "kind": "wide",
+      "state": "lit",
+      "rect": {
+        "x": 1536,
+        "y": 256,
+        "width": 512,
+        "height": 256
+      },
+      "uv": {
+        "u0": 0.35294117647058826,
+        "v0": 0.3333333333333333,
+        "u1": 0.47058823529411764,
+        "v1": 0.6666666666666666
+      }
+    },
+    {
+      "id": "wide-space-lit",
+      "label": "SPACE",
+      "kind": "wide",
+      "state": "lit",
+      "rect": {
+        "x": 2048,
+        "y": 256,
+        "width": 512,
+        "height": 256
+      },
+      "uv": {
+        "u0": 0.47058823529411764,
+        "v0": 0.3333333333333333,
+        "u1": 0.5882352941176471,
+        "v1": 0.6666666666666666
+      }
+    },
+    {
+      "id": "wide-shift-lit",
+      "label": "SHIFT",
+      "kind": "wide",
+      "state": "lit",
+      "rect": {
+        "x": 2560,
+        "y": 256,
+        "width": 512,
+        "height": 256
+      },
+      "uv": {
+        "u0": 0.5882352941176471,
+        "v0": 0.3333333333333333,
+        "u1": 0.7058823529411765,
+        "v1": 0.6666666666666666
+      }
+    },
+    {
+      "id": "standard-q-lit",
+      "label": "Q",
+      "kind": "standard",
+      "state": "lit",
+      "rect": {
+        "x": 3072,
+        "y": 256,
+        "width": 256,
+        "height": 256
+      },
+      "uv": {
+        "u0": 0.7058823529411765,
+        "v0": 0.3333333333333333,
+        "u1": 0.7647058823529411,
+        "v1": 0.6666666666666666
+      }
+    },
+    {
+      "id": "standard-arrow-up-lit",
+      "label": "ARROWUP",
+      "kind": "standard",
+      "state": "lit",
+      "rect": {
+        "x": 3328,
+        "y": 256,
+        "width": 256,
+        "height": 256
+      },
+      "uv": {
+        "u0": 0.7647058823529411,
+        "v0": 0.3333333333333333,
+        "u1": 0.8235294117647058,
+        "v1": 0.6666666666666666
+      }
+    },
+    {
+      "id": "standard-arrow-left-lit",
+      "label": "ARROWLEFT",
+      "kind": "standard",
+      "state": "lit",
+      "rect": {
+        "x": 3584,
+        "y": 256,
+        "width": 256,
+        "height": 256
+      },
+      "uv": {
+        "u0": 0.8235294117647058,
+        "v0": 0.3333333333333333,
+        "u1": 0.8823529411764706,
+        "v1": 0.6666666666666666
+      }
+    },
+    {
+      "id": "standard-arrow-down-lit",
+      "label": "ARROWDOWN",
+      "kind": "standard",
+      "state": "lit",
+      "rect": {
+        "x": 3840,
+        "y": 256,
+        "width": 256,
+        "height": 256
+      },
+      "uv": {
+        "u0": 0.8823529411764706,
+        "v0": 0.3333333333333333,
+        "u1": 0.9411764705882353,
+        "v1": 0.6666666666666666
+      }
+    },
+    {
+      "id": "standard-arrow-right-lit",
+      "label": "ARROWRIGHT",
+      "kind": "standard",
+      "state": "lit",
+      "rect": {
+        "x": 4096,
+        "y": 256,
+        "width": 256,
+        "height": 256
+      },
+      "uv": {
+        "u0": 0.9411764705882353,
+        "v0": 0.3333333333333333,
+        "u1": 1.0,
+        "v1": 0.6666666666666666
+      }
+    },
+    {
+      "id": "standard-blank-disabled",
+      "label": "BLANK",
+      "kind": "standard",
+      "state": "disabled",
+      "rect": {
+        "x": 0,
+        "y": 512,
+        "width": 256,
+        "height": 256
+      },
+      "uv": {
+        "u0": 0.0,
+        "v0": 0.6666666666666666,
+        "u1": 0.058823529411764705,
+        "v1": 1.0
+      }
+    },
+    {
+      "id": "standard-w-disabled",
+      "label": "W",
+      "kind": "standard",
+      "state": "disabled",
+      "rect": {
+        "x": 256,
+        "y": 512,
+        "width": 256,
+        "height": 256
+      },
+      "uv": {
+        "u0": 0.058823529411764705,
+        "v0": 0.6666666666666666,
+        "u1": 0.11764705882352941,
+        "v1": 1.0
+      }
+    },
+    {
+      "id": "standard-a-disabled",
+      "label": "A",
+      "kind": "standard",
+      "state": "disabled",
+      "rect": {
+        "x": 512,
+        "y": 512,
+        "width": 256,
+        "height": 256
+      },
+      "uv": {
+        "u0": 0.11764705882352941,
+        "v0": 0.6666666666666666,
+        "u1": 0.17647058823529413,
+        "v1": 1.0
+      }
+    },
+    {
+      "id": "standard-s-disabled",
+      "label": "S",
+      "kind": "standard",
+      "state": "disabled",
+      "rect": {
+        "x": 768,
+        "y": 512,
+        "width": 256,
+        "height": 256
+      },
+      "uv": {
+        "u0": 0.17647058823529413,
+        "v0": 0.6666666666666666,
+        "u1": 0.23529411764705882,
+        "v1": 1.0
+      }
+    },
+    {
+      "id": "standard-d-disabled",
+      "label": "D",
+      "kind": "standard",
+      "state": "disabled",
+      "rect": {
+        "x": 1024,
+        "y": 512,
+        "width": 256,
+        "height": 256
+      },
+      "uv": {
+        "u0": 0.23529411764705882,
+        "v0": 0.6666666666666666,
+        "u1": 0.29411764705882354,
+        "v1": 1.0
+      }
+    },
+    {
+      "id": "standard-e-disabled",
+      "label": "E",
+      "kind": "standard",
+      "state": "disabled",
+      "rect": {
+        "x": 1280,
+        "y": 512,
+        "width": 256,
+        "height": 256
+      },
+      "uv": {
+        "u0": 0.29411764705882354,
+        "v0": 0.6666666666666666,
+        "u1": 0.35294117647058826,
+        "v1": 1.0
+      }
+    },
+    {
+      "id": "wide-blank-disabled",
+      "label": "BLANK",
+      "kind": "wide",
+      "state": "disabled",
+      "rect": {
+        "x": 1536,
+        "y": 512,
+        "width": 512,
+        "height": 256
+      },
+      "uv": {
+        "u0": 0.35294117647058826,
+        "v0": 0.6666666666666666,
+        "u1": 0.47058823529411764,
+        "v1": 1.0
+      }
+    },
+    {
+      "id": "wide-space-disabled",
+      "label": "SPACE",
+      "kind": "wide",
+      "state": "disabled",
+      "rect": {
+        "x": 2048,
+        "y": 512,
+        "width": 512,
+        "height": 256
+      },
+      "uv": {
+        "u0": 0.47058823529411764,
+        "v0": 0.6666666666666666,
+        "u1": 0.5882352941176471,
+        "v1": 1.0
+      }
+    },
+    {
+      "id": "wide-shift-disabled",
+      "label": "SHIFT",
+      "kind": "wide",
+      "state": "disabled",
+      "rect": {
+        "x": 2560,
+        "y": 512,
+        "width": 512,
+        "height": 256
+      },
+      "uv": {
+        "u0": 0.5882352941176471,
+        "v0": 0.6666666666666666,
+        "u1": 0.7058823529411765,
+        "v1": 1.0
+      }
+    },
+    {
+      "id": "standard-q-disabled",
+      "label": "Q",
+      "kind": "standard",
+      "state": "disabled",
+      "rect": {
+        "x": 3072,
+        "y": 512,
+        "width": 256,
+        "height": 256
+      },
+      "uv": {
+        "u0": 0.7058823529411765,
+        "v0": 0.6666666666666666,
+        "u1": 0.7647058823529411,
+        "v1": 1.0
+      }
+    },
+    {
+      "id": "standard-arrow-up-disabled",
+      "label": "ARROWUP",
+      "kind": "standard",
+      "state": "disabled",
+      "rect": {
+        "x": 3328,
+        "y": 512,
+        "width": 256,
+        "height": 256
+      },
+      "uv": {
+        "u0": 0.7647058823529411,
+        "v0": 0.6666666666666666,
+        "u1": 0.8235294117647058,
+        "v1": 1.0
+      }
+    },
+    {
+      "id": "standard-arrow-left-disabled",
+      "label": "ARROWLEFT",
+      "kind": "standard",
+      "state": "disabled",
+      "rect": {
+        "x": 3584,
+        "y": 512,
+        "width": 256,
+        "height": 256
+      },
+      "uv": {
+        "u0": 0.8235294117647058,
+        "v0": 0.6666666666666666,
+        "u1": 0.8823529411764706,
+        "v1": 1.0
+      }
+    },
+    {
+      "id": "standard-arrow-down-disabled",
+      "label": "ARROWDOWN",
+      "kind": "standard",
+      "state": "disabled",
+      "rect": {
+        "x": 3840,
+        "y": 512,
+        "width": 256,
+        "height": 256
+      },
+      "uv": {
+        "u0": 0.8823529411764706,
+        "v0": 0.6666666666666666,
+        "u1": 0.9411764705882353,
+        "v1": 1.0
+      }
+    },
+    {
+      "id": "standard-arrow-right-disabled",
+      "label": "ARROWRIGHT",
+      "kind": "standard",
+      "state": "disabled",
+      "rect": {
+        "x": 4096,
+        "y": 512,
+        "width": 256,
+        "height": 256
+      },
+      "uv": {
+        "u0": 0.9411764705882353,
+        "v0": 0.6666666666666666,
+        "u1": 1.0,
+        "v1": 1.0
+      }
+    }
+  ]
+}

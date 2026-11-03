@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "1.0",
+  "status": "runtime-integration-ready-not-integrated",
+  "assetId": "stage2-modifier-family-shared-cube",
+  "geometry": {
+    "path": "shared-cube-master-v008.glb",
+    "bytes": 15384,
+    "sha256": "FE6CECF782405AA474CC9BA57D154A2A266BEAABE5664111C01302F5C80D7E29",
+    "dimensionsMeters": [0.68, 0.68, 0.68],
+    "bevelWidthMeters": 0.025,
+    "origin": "centered",
+    "sharedBy": ["stage2-fast-modifier", "stage2-double-modifier"]
+  },
+  "requiredAnchors": {
+    "frontLabelFace": "runtime label child attachment; carried/world front faces player",
+    "rearGaugeFace": "runtime gauge child attachment; outward after deterministic seating flip",
+    "insertionAxis": "+X logical runtime axis",
+    "rotationPivot": "centered pivot for deterministic 180-degree seating flip"
+  },
+  "interface": {
+    "openingMeters": 0.70,
+    "clearanceMetersPerSide": 0.01,
+    "acceptedInsertionPercent": [0, 25, 50, 75, 100]
+  },
+  "fastMaterial": {
+    "bodyOpacity": 1,
+    "response": "casual soft matte, high roughness, low specular, nonmetallic",
+    "runtimeStates": ["yellow", "orange", "red"],
+    "bakedStateArt": false
+  },
+  "doubleMaterial": {
+    "rootOpacity": 1,
+    "rootOpacityAnimated": false,
+    "response": "cyan translucent solid-volume soft glass-jelly",
+    "runtimeControls": ["transmission", "attenuation", "thickness", "IOR", "roughness"],
+    "forbidden": ["whole-object alpha fade", "opacity 0", "disappearing mesh", "additive washout"],
+    "bakedStateArt": false
+  },
+  "semanticChildren": {
+    "independentFromBodyMaterial": true,
+    "runtimeOnly": ["front label", "rear gauge", "heat/charge state presentation"],
+    "inheritBodyTransmission": false
+  },
+  "collisionInteraction": "authoritative runtime state remains separate from representation and material state",
+  "integrationPerformed": false,
+  "integrationOwner": "separate Primary runtime ticket"
+}

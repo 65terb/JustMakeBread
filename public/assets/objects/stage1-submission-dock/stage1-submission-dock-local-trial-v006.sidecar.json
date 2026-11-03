@@ -1,0 +1,83 @@
+{
+  "schemaVersion": "1.0",
+  "status": "USER_FINAL_VISUAL_APPROVED_RUNTIME_INTEGRATION_READY",
+  "asset": {
+    "file": "stage1-submission-dock-local-trial-v006.glb",
+    "bytes": 51544,
+    "sha256": "440A270CD78EE2C289E4E64D530B24A67E8909B35840DF9AF7182522D10E7CFF"
+  },
+  "coordinateSystem": {
+    "units": "meters",
+    "blenderAxes": "X along wall, Y outward into playable room, Z up",
+    "runtimeMappingFromV004": "Blender X maps V004 local X; Blender Z maps V004 local Y; Blender Y maps V004 local Z",
+    "root": "dockRoot",
+    "pivot": "center of the flat closed rear wall-mount face",
+    "boundsXYZ": [1.9500000477, 0.6299999952, 0.8399999738],
+    "contractWHD": [1.95, 0.84, 0.63],
+    "worldIntakeCenterY": 0.90,
+    "worldBottomTopY": [0.48, 1.32]
+  },
+  "geometry": {
+    "meshNodes": ["Dock_Housing_Cavity", "Dock_Intake_Rim"],
+    "componentsPerMesh": 1,
+    "triangles": 928,
+    "outerCornerRadiusM": 0.12,
+    "outerBevelSegmentsPerQuarter": 6,
+    "rimOuterWHM": [1.62, 0.54],
+    "rimOuterRadiusM": 0.18,
+    "acceptanceOpeningWHM": [1.42, 0.38],
+    "mouthCornerRadiusM": 0.15,
+    "rimDepthM": 0.08,
+    "cavityDepthM": 0.38,
+    "cavityFrontWHM": [1.42, 0.38],
+    "cavityRearWHM": [1.10, 0.22],
+    "rearClosed": true,
+    "wallMountPlaneMaxDeviationM": 0.0
+  },
+  "materials": [
+    {"name": "Dock_Ivory_Matte", "role": "outer housing", "hex": "#F2F1EA"},
+    {"name": "Dock_Warm_Intake_Rim", "role": "thick receiving rim", "hex": "#B95F45"},
+    {"name": "Dock_Recessed_Cavity", "role": "inner ceiling, walls and closed rear", "hex": "#252422"},
+    {"name": "Dock_Intake_Floor", "role": "readable intake floor", "hex": "#564E47"}
+  ],
+  "textures": 0,
+  "images": 0,
+  "externalUris": [],
+  "namedAnchors": {
+    "dockRoot": [0.0, 0.0, 0.0],
+    "wallMountPlane": {"point": [0.0, 0.0, 0.0], "outwardNormal": [0.0, 1.0, 0.0]},
+    "outwardNormal": [0.0, 1.0, 0.0],
+    "breadContact": [0.0, 0.63, 0.0],
+    "suctionTarget": [0.0, 0.18, 0.0],
+    "goalBoardMount": [0.0, 0.0, 0.69],
+    "interactionProxyReference": {"center": [0.0, 0.465, 0.0], "boundsXZY": [1.77, 0.63, 0.33]}
+  },
+  "replacementContract": {
+    "goalBoardIsSeparateAsset": true,
+    "goalBoardAppearanceAuthority": "existing Primary runtime physical scoreboard template; frame #34454C, panel #263746, Galmuri runtime content",
+    "goalBoardRuntimeContent": "replaceable approved bread pictogram plus authoritative GameState submittedBreadCount / targetBreadCount",
+    "qaBlueBlankBoard": "NON_RUNTIME_DO_NOT_INTEGRATE",
+    "bakedBoardGeometry": false,
+    "bakedBread": false,
+    "bakedUiTextIconCountFont": false,
+    "wallIsSharedRuntimeGeometry": true,
+    "missingAnchorBehavior": "fail atomically to the existing Primary procedural submission-dock visual; never partially mount V006 or attach the goal board",
+    "unusedProviderInputHistory": "V005 provider preflight remains preserved but is not a runtime fallback and must not be submitted automatically"
+  },
+  "interactionPreparation": {
+    "visualInteractionRadiusM": 1.55,
+    "recommendedClosedGameplayProxy": "rounded box centered at interactionProxyReference, 1.77 X by 0.63 outward by 0.33 Z; exact collision authority remains future Primary integration",
+    "suctionDirection": [0.0, -1.0, 0.0],
+    "approvedBreadBoundsWHDM": [0.22, 0.098179, 0.162983],
+    "fiveBreadCentersAcrossOpeningX": [-0.54, -0.27, 0.0, 0.27, 0.54],
+    "extremeCenterApproxEdgeClearanceM": 0.06
+  },
+  "runtimeIntegration": "ready-for-separate-primary-integration-unit",
+  "userApproval": {
+    "scope": "V006 dock geometry, materials, scale and named-anchor contract",
+    "approved": true,
+    "immutableAssetSha256": "440A270CD78EE2C289E4E64D530B24A67E8909B35840DF9AF7182522D10E7CFF",
+    "excluded": ["QA-only blue blank board", "Primary code changes", "runtime placement changes outside named-anchor handoff"]
+  },
+  "nextGate": "separate Primary integration and human runtime review"
+}

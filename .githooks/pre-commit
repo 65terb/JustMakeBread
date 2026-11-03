@@ -1,0 +1,12 @@
+#!/bin/sh
+set -eu
+
+repo_root=$(git rev-parse --show-toplevel)
+cd "$repo_root"
+
+npm_command=npm
+if command -v npm.cmd >/dev/null 2>&1; then
+  npm_command=npm.cmd
+fi
+
+"$npm_command" run check:privacy:staged

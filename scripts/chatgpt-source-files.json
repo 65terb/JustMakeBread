@@ -1,0 +1,16 @@
+{
+  "projectSlug": "track1-production-puzzle",
+  "files": [
+    "AGENTS.md",
+    "docs/COMPETITION_RULES.md",
+    "docs/GAME_DESIGN_TRACK1.md",
+    "docs/ROADMAP.md",
+    "docs/EXECUTION_PLAN.md",
+    "docs/DECISIONS.md",
+    "docs/CODEX_COLLAB_LOG.md",
+    "docs/REVIEW_LOG.md",
+    "docs/PLAYTEST_LOG.md",
+    "docs/ASSET_LICENSES.md",
+    "docs/CODEX_REQUEST_TEMPLATES.md"
+  ]
+}

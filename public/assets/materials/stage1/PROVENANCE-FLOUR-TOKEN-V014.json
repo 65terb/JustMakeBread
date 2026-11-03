@@ -1,0 +1,50 @@
+{
+  "schemaVersion": "1.0",
+  "assetId": "stage1-flour-token-b2-v014",
+  "status": "USER_FINAL_VISUAL_APPROVED_RUNTIME_INTEGRATION_READY",
+  "sourceDesign": {
+    "authority": "user-approved B2 folded-top flour sack direction",
+    "canonicalReviewSha256": "5D84407698CEFF3B19E1A1155E2FD424CD42DE83838C737E1EA9DD431A366162",
+    "selectedColorDirection": "B-warm-flour-ivory-#F2EEE4",
+    "selectedPreviewSha256": "D0489364FBD81DE6F8565D41EC56B058C44F655C8B67B135AC42DC221A460756"
+  },
+  "provider": {
+    "name": "Tripo API",
+    "geometryTaskId": "20653fed-fd69-404b-8d0c-b84ec8cb3eee",
+    "textureTaskId": "6206bbc6-2901-4922-8e72-67bc46bcaf58",
+    "textureModelVersion": "v3.0-20250812",
+    "textureQuality": "standard",
+    "textureSeed": 220813,
+    "creditsConsumedByFinalTextureTask": 10,
+    "walletAvailableBefore": 760,
+    "walletAvailableAfter": 750,
+    "automaticRetry": 0,
+    "signedDownloadUrlRetained": false
+  },
+  "finalAsset": {
+    "path": "runtime-candidate/stage1-flour-token-b2-v014.glb",
+    "sha256": "270820AE7A5C21B5825DA1D7284E6ACD540544E93C08891773F9CAB4F3FF8660",
+    "bytes": 2249484,
+    "geometryMaximumVertexDeviationFromApprovedGeometry": 0.0,
+    "externalUris": 0
+  },
+  "rightsEvidence": {
+    "termsVerifiedDate": "2026-08-12",
+    "billingVerifiedDate": "2026-08-12",
+    "termsUrl": "https://www.tripo3d.ai/terms",
+    "billingUrl": "https://platform.tripo3d.ai/docs/billing",
+    "textureDocumentationUrl": "https://platform.tripo3d.ai/docs/texture",
+    "scopeNote": "The project records user-approved source rights and the paid-provider terms evidence current on the verification date. This is provenance evidence, not a legal guarantee."
+  },
+  "privacy": {
+    "apiSecretPersisted": false,
+    "signedUrlPersisted": false,
+    "localAbsolutePathPersisted": false,
+    "personalIdentityPersisted": false
+  },
+  "freeze": {
+    "bytesImmutable": true,
+    "noFurtherGeometryTextureRefineOrRepairAuthorized": true,
+    "runtimeCopyMustMatchShaAndBytes": true
+  }
+}

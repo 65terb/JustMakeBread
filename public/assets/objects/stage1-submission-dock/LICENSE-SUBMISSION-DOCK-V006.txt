@@ -1,0 +1,10 @@
+Stage1 submission dock V006 runtime asset
+
+File: stage1-submission-dock-local-trial-v006.glb
+SHA-256: 440A270CD78EE2C289E4E64D530B24A67E8909B35840DF9AF7182522D10E7CFF
+Status: USER FINAL VISUAL APPROVED / RUNTIME INTEGRATION READY
+
+This is a project-authored derivative of the user-approved submission-dock design.
+No external mesh, texture, provider API, or package is embedded in this runtime payload.
+The asset is served with its runtime sidecar and provenance record. The separate goal
+scoreboard remains code-native and is not baked into this GLB.
